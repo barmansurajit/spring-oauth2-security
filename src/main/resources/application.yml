@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-oauth2-security
+  main:
+    allow-bean-definition-overriding: true
+
+security:
+  oauth2:
+    client:
+      client-id: 6139ae38-4ab7-4dab-911c-f1687c1d5c1a
+      client-secret: 52e75e43-68a3-431e-9d14-e1bb7e52bfa8
+      access-token-uri: https://pal.login.run.pivotal.io/oauth/token
+      grant-type: client_credentials
