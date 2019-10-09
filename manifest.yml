@@ -1,0 +1,20 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: spring-boot-deployment
+spec:
+  selector:
+    matchLabels:
+      app: spring-outh2-security
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: spring-outh2-security
+    spec:
+      containers:
+        - name: spring-outh2-security
+          image: spring-outh2-security
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
